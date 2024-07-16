@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginx: 
+    image: nginx:latest
+    ports:
+      - "80:80"
+  tomcat:
+    image: amazonlinux:latest
+    ports:
+      - "8080:8080"
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306" 
